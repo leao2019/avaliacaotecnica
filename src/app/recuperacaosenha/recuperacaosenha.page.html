@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Cadatro Usuario</ion-title>
+    <ion-icon name="chevron-back"[routerLink] = "['/login']" routerdirction= "forward"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon>Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="key"></ion-icon>Senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="key"></ion-icon>Confirma senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="success" expand="block">Cadastrar</ion-button>
+        <br>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar  color="success">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="lock-closed"></ion-icon>Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating"><ion-icon name="key"></ion-icon>Senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/cursos']" type="submit" color="success" expand="block">Entrar</ion-button>
+        <br>
+        <a [routerLink]="['/recuperacaosenha']" class="small-text">Cadastre-se
+        </a>
+      </ion-col>
+    </ion-row>
+  </form>
+  
+</ion-content>
